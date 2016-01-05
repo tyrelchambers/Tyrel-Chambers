@@ -1,0 +1,17 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  li {
+    color: white;
+    margin: 2.5px 7.5px;
+    padding: 2.5px 7.5px;
+    box-sizing: border-box;
+    opacity: .4;
+    transition: all 0.3s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

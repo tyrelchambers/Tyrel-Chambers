@@ -1,0 +1,19 @@
+{
+  "name": "portfolio2",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Tyrel Chambers <tychambers3@hotmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/tyrelchambers/Portfolio2",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
