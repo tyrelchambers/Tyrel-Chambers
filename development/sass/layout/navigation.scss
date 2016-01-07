@@ -1,18 +1,25 @@
 .navbar {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 20px;
+  text-align: right;
+  border-right: 2px solid rgba(255, 255, 255, 0.5);
+  margin-right: 20px;
 
   li {
+    width: 180px;
     color: white;
-    margin: 2.5px 7.5px;
-    padding: 2.5px 7.5px;
+    padding: 2.5px 0px;
+    padding-right: 20px;
     box-sizing: border-box;
     opacity: .4;
     transition: all 0.3s ease;
-
+    font-size: 18px;
+    border-right:0px solid rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
     &:hover {
       opacity: 1;
+      border-right:15px solid rgba(255, 255, 255, 0.5);
     }
   }
 }

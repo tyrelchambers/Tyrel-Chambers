@@ -1,0 +1,41 @@
+.bio {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.bio-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: rgb(215, 215, 215);
+  border-radius: 150px;
+  > h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: rgb(62, 62, 62);
+  }
+}
+
+.bio-pic {
+  height:250px;
+  width:250px;
+  margin-right: 150px;
+  background: url('images/tyrel.jpg') center no-repeat;
+  background-size: cover;
+  background-position: top;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.39);
+}
+
+.bio-main {
+  margin-top: 50px;
+  padding-left: 20px;
+  border-left: 5px solid rgba(62, 62, 62, .4);
+  box-sizing: border-box;
+  p {
+    font-size: 18px;
+    line-height: 1.5em;
+    color: rgb(62, 62, 62);
+  }
+}
