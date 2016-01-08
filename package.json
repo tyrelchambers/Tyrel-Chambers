@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/tyrelchambers/Portfolio2/issues"
   },
-  "homepage": "https://github.com/tyrelchambers/Portfolio2#readme"
+  "homepage": "https://github.com/tyrelchambers/Portfolio2#readme",
+  "devDependencies": {
+    "jade": "^1.11.0"
+  }
 }

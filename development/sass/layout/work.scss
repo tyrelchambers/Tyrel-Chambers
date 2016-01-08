@@ -6,7 +6,7 @@
 
 }
 
-.work-header {
+.work-header, .contact-header {
   height: 350px;
   width: 100%;
   display: flex;
@@ -21,12 +21,12 @@
     font-size: 48px;
     text-transform: uppercase;
 
-    &:nth-child(2) {
+    &:nth-child(1) {
       margin-right: 15px;
       padding-right:15px;
       padding-left: 15px;
       box-sizing: border-box;
-      border: 5px solid rgb(221, 221, 221);
+      border: 5px solid #3ea3ff;
     }
 
     &:last-child {
@@ -48,13 +48,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 25px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 5px;
     box-shadow: 0px 5px 7px rgba(#000000, 0.39);
-    transition: all 0.2s ease-in;
     position: relative;
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+
+    &:hover {
+      .li-contents {
+        left: 0;
+      }
+
+      &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: rgba(black, 0);
+        border-radius: 5px;
+        transition: all 0.3s ease;
+      }
+    }
+    &:hover::after {
+      background-color: rgba(black, .23);
+    }
 
     img {
       display: flex;
@@ -67,19 +87,40 @@
     h3 {
       color: rgb(221, 221, 221);
       text-transform: uppercase;
+      background-color: rgba(3, 38, 64, .6);
+      padding: 5px 15px;
+      box-sizing: border-box;
+      border-radius: 15px;
     }
-
-
   }
+  h2 {
+   color: rgb(112, 112, 112);
+   margin-bottom: 30px;
+   max-width: 900px;
+
+ }
 }
 
 .li-contents {
+  height: 100%;
+  width:100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-out;
   position: absolute;
-  top: 50%;
-  transform: translate(-200%, -50%);
+  top:0;
+  left:-260px;
 }
 
 #c2p {
   background-image: url('images/work/c2p.jpg');
+}
+
+#gesher {
+  background-image: url('images/work/gesher.jpg');
+}
+
+#devgoods {
+  background-image: url('images/work/devgoods.jpg');
 }
