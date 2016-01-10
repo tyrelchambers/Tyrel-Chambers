@@ -36,7 +36,7 @@
   background-color: rgba(white, .98);
   opacity: 0;
   transition: all 0.1s ease;
-
+  z-index: 99;
   li {
     padding: 10px 15px;
     background-color: rgba(white, 0);
@@ -56,5 +56,11 @@
     position: absolute;
     left: 0;
     color: rgba(96, 96, 96, 0.22);
+  }
+
+  @media screen and (max-width: 990px) {
+    > h2 {
+      display: none;
+    }
   }
 }

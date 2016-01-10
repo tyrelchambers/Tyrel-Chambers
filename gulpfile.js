@@ -21,7 +21,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('html', function() {
-  return gulp.src('./development/index.html')
+  return gulp.src('./development/*.html')
     .pipe(plumber({errorHandler: errorAlert}))
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('production'));

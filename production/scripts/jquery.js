@@ -5,3 +5,10 @@ $(window).scroll(function() {
     $('.alt-navbar').css('opacity', '0');
   }
 });
+
+$('.navbar > li > h2 > a, .alt-navbar > li > h2 > a ').click(function(){
+  $('html, body').animate({
+    scrollTop: $( $.attr(this, 'href') ).offset().top - 90
+  }, 1000);
+  return false;
+});

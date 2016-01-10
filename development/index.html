@@ -5,23 +5,24 @@
   <title>Tyrel Chambers</title>
   <link rel="stylesheet" href="main.css">
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
   <ul class="alt-navbar">
     <h2>Tyrel Chambers</h2>
-    <li><h2><a href="#">Home</a></h2></li>
-    <li><h2><a href="#">About</a></h2></li>
-    <li><h2><a href="#">Work</a></h2></li>
-    <li><h2><a href="#">Contact</a></h2></li>
+    <li><h2><a href="#home">Home</a></h2></li>
+    <li><h2><a href="#about">About</a></h2></li>
+    <li><h2><a href="#work">Work</a></h2></li>
+    <li><h2><a href="#contact">Contact</a></h2></li>
     <li><h2><a href="https://tyrelchambers.wordpress.com/">Blog</a></h2></li>
   </ul>
-  <section class="header">
+  <section id="home" class="header">
     <div class="header-content">
       <ul class="navbar">
-        <li><h2><a href="#">Home</a></h2></li>
-        <li><h2><a href="#">About</a></h2></li>
-        <li><h2><a href="#">Work</a></h2></li>
-        <li><h2><a href="#">Contact</a></h2></li>
+        <li><h2><a href="#home">Home</a></h2></li>
+        <li><h2><a href="#about">About</a></h2></li>
+        <li><h2><a href="#work">Work</a></h2></li>
+        <li><h2><a href="#contact">Contact</a></h2></li>
         <li><h2><a href="https://tyrelchambers.wordpress.com/">Blog</a></h2></li>
       </ul>
 
@@ -29,7 +30,7 @@
     </div>
   </section>
   <main class="content container">
-    <div class="bio">
+    <div id="about" class="bio">
       <section class="bio-header"> <!-- Make slide right to left, fade in text and reveal BG -->
         <div class="bio-pic"></div>
         <h2>Oh where to begin?</h2>
@@ -47,7 +48,7 @@
       </section>
     </div>
   </main>
-  <section class="work">
+  <section id="work" class="work">
     <div class="work-header">
       <h2>Work</h2>
       <h2>Developed with integrity</h2>
@@ -57,7 +58,7 @@
       <h2>These pieces of work are among many things: under construction, published, personal projects. Whatever the case may be, they were fun to work on!</h2>
       <li id="c2p">
         <div class="li-contents">
-          <a href="#">
+          <a href="c2p.html">
             <img src='images/expand.svg' />
             <h3>Conflict2Profit</h3>
           </a>
@@ -81,7 +82,7 @@
       </li>
     </ul>
   </section>
-  <section class="contact">
+  <section id="contact" class="contact">
     <div class="contact-header">
       <h2>Contact</h2>
       <h2>Like what you've seen?</h2>
@@ -92,6 +93,7 @@
   </section>
 
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
   <script src="scripts/jquery.js"></script>
 </body>
 </html>
