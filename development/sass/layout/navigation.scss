@@ -17,10 +17,41 @@
     font-size: 18px;
     border-right:0px solid rgba(255, 255, 255, 0.5);
     text-transform: uppercase;
+
     &:hover {
       opacity: 1;
       border-right:15px solid rgba(255, 255, 255, 0.5);
     }
+
+    @media screen and (max-width: 414px) {
+      display: block;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      font-size: 20px;
+      text-align: center;
+
+      &:first-child {
+        margin-top: 10px;
+      }
+      &:hover {
+        opacity: 1;
+        border-right: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: 414px) {
+    width:100%;
+    margin:0;
+    flex-direction: column;
+    border-right: none;
+    margin: auto;
+
+
   }
 }
 
@@ -61,6 +92,11 @@
   @media screen and (max-width: 990px) {
     > h2 {
       display: none;
+    }
+  }
+  @media screen and (max-width: 414px) {
+    li {
+      font-size: 14px;
     }
   }
 }

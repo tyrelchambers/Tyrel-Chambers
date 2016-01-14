@@ -1,0 +1,50 @@
+.social {
+  &-media {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+
+  &-block {
+    margin: 15px;
+    border-radius: 10px;
+    > a {
+      width: 250px;
+      height: 75px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+
+      h3 {
+        color: white;
+        font-size: 22px;
+      }
+      img {
+        height: 40px;
+      }
+    }
+
+  }
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.github {
+  background-color: #333333;
+}
+
+.twitch {
+  background-color: #6441A5;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+.email {
+  background-color: #e41b1b;
+}

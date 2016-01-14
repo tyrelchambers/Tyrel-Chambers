@@ -1,11 +1,13 @@
 @import 'base/resets';
 @import 'base/typography';
 
+@import 'components/social-media';
+
 @import 'layout/header';
 @import 'layout/navigation';
 @import 'layout/bio';
 @import 'layout/work';
-@import 'layout/contact';
+@import 'layout/footer';
 
 @import 'utils/helpers';
 @import 'utils/colours';
