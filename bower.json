@@ -1,12 +1,12 @@
 {
-  "name": "portfolio2",
+  "name": "Tyrel Chambers",
   "description": "",
   "main": "index.js",
   "authors": [
     "Tyrel Chambers <tychambers3@hotmail.com>"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/tyrelchambers/Portfolio2",
+  "homepage": "https://github.com/tyrelchambers/Tyrel-Chambers",
   "moduleType": [],
   "private": true,
   "ignore": [
