@@ -16,7 +16,7 @@ gulp.task('sass', function() {
       .pipe(sass())
       .pipe(autoprefixer())
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('production'))
+    .pipe(gulp.dest('/'))
     .pipe(browserSync.stream());
 });
 
@@ -24,13 +24,13 @@ gulp.task('html', function() {
   return gulp.src('./development/*.html')
     .pipe(plumber({errorHandler: errorAlert}))
     .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest('production'));
+    .pipe(gulp.dest('/'));
 });
 
 gulp.task('js', function() {
   return gulp.src('./development/scripts/*.js')
     .pipe(plumber({errorHandler: errorAlert}))
-    .pipe(gulp.dest('production/scripts'));
+    .pipe(gulp.dest('/scripts'));
 });
 
 gulp.task('sass:build', function() {
@@ -39,14 +39,14 @@ gulp.task('sass:build', function() {
     .pipe(sass({outputStyle: 'compressed'}))
     .pipe(autoprefixer())
     .pipe(minifyCSS())
-    .pipe(gulp.dest('production'));
+    .pipe(gulp.dest('/'));
 });
 
 gulp.task('js:build', function() {
   return gulp.src('./development/scripts/*.js')
     .pipe(plumber({errorHandler: errorAlert}))
     .pipe(uglify())
-    .pipe(gulp.dest('production/scripts'));
+    .pipe(gulp.dest('/scripts'));
 });
 
 gulp.task('build', ['sass:build', 'js:build']);
@@ -59,7 +59,7 @@ gulp.task('html-watch', ['html'], function() {
 gulp.task('serve', ['sass', 'js', 'html'], function() {
   browserSync.init({
     server: {
-      baseDir: './production'
+      baseDir: './'
     }
   });
 
