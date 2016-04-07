@@ -45,6 +45,10 @@ swipeLeft();
 swipeRight();
 
 
+
+
+  /* ------ */
+
 });
 
 if ( window.location.hash ) scroll(0,0);
@@ -54,11 +58,17 @@ setTimeout( function() { scroll(0,0); }, 1);
 $(function() {
 
     // your current click function
-    $('.navbar > li > a').click(function(){
-      $('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top - 90
-      }, 1000);
-      return false;
+    $('.mobile-navbar > li > a').on('click', function() {
+      var navA = $(this).attr('href');
+
+      $('.wrapper').removeClass('slideMenu');
+
+      setTimeout(function () {
+        $('html, body').animate({
+          scrollTop: $(navA).offset().top - 20
+        }, 1000);
+      }, 300);
+
     });
 
     // *only* if we have anchor on the url
