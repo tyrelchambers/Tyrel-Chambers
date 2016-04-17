@@ -52,11 +52,30 @@
         <li><a href="https://twitter.com/Chambers43"><img src="../images/twitter.svg" alt=""></a></li>
         <li><a href="https://www.twitch.tv/chapstique43"><img src="../images/twitch-icon.svg" alt=""></a></li>
       </ul>
-      <h2><a href="mailto: lets.chat@tyrelchambers.com">lets.chat@tyrelchambers.com</a></h2>
+      <h2><button type="button" name="email-btn" onclick="emailModal()">lets.chat@tyrelchambers.com</button></h2>
   </footer>
   </div>
+  <section class="email-modal">
+    <div class="email-content">
+      <div class="email-header">
+        <h2>Let's Chat!</h2>
+      </div>
+      <div class="email-body">
+        <form method="post" action="https://formspree.io/lets.chat@tyrelchambers.com">
+          <div><input type="text" name="first name" placeholder="First Name"><input type="text" name="last name" placeholder="Last Name"></div>
+          <input type="text" name="email" placeholder="Email">
+          <textarea name="message" rows="8" cols="40" placeholder="Message"></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+      <div class="email-footer">
+        <p>&lt; Made with &lt;3 for you /&gt; </p>
+      </div>
+    </div>
+  </section>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="jquery-mobile/jquery.mobile.custom.min.js"></script>
   <script src="scripts/app.js"></script>
+  <script src="scripts/modal.js"></script>
 </body>
 </html>
