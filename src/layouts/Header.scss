@@ -13,3 +13,9 @@
   top: 0;
   z-index: 99;
 }
+
+@media screen and (max-width: 425px) {
+  .header {
+    justify-content: center;
+  }
+}

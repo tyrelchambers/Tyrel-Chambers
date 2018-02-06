@@ -26,11 +26,9 @@ export default class InstragramFeed extends Component {
                   <div class="insta-caption">
                     <p>${data.data[i].caption.text}</p>
                     <span class="tags">
-                      <p>
-                        ${data.data[i].tags.map((item) => `
-                          <p>#${item}</p>
-                        `).join("")}
-                      </p>
+                    ${data.data[i].tags.map((item) => `
+                      <p>#${item}</p>
+                    `).join("")}
                     </span>
                   </div>
                 </div>

@@ -12,9 +12,10 @@
   width: 100%;
   padding: 0 1em;
   margin-top: 3em;
-
+  flex-wrap: wrap;
+  justify-content: center;
   li {
-    margin: 0 1em;
+    margin: 1em 1em;
   }
 }
 .business {
@@ -30,5 +31,12 @@
 
   img {
     width: 300px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .business-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

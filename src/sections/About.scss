@@ -18,3 +18,18 @@
     line-height: 1.8em;
   }
 }
+
+
+@media screen and (max-width: 769px) {
+  .about-section {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .about-section {
+    p {
+      width: 100%;
+    }
+  }
+}

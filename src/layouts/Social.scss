@@ -50,3 +50,14 @@
 .visible {
   display: flex !important;
 }
+
+@media screen and (max-width: 425px) {
+  .socials {
+    width: 100%;
+
+    ul {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+}

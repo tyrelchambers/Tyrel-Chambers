@@ -12,6 +12,7 @@
 .resource-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
   
 }
 .resource {
@@ -79,5 +80,33 @@
       transform: scale(0.97);
       box-shadow: 0px 0px 0px 0px rgba(black, 0);
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .resource-wrapper {
+    padding: 0 2em;
+  }
+
+  .resource-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 350px);
+
+  }
+
+  
+}
+
+@media screen and (max-width: 425px) {
+  .resource-wrapper {
+    p {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .resource-list {
+    grid-template-columns: repeat(auto-fill, 100%);
   }
 }
