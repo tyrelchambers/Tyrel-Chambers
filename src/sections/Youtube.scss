@@ -1,0 +1,50 @@
+@import '../colours.scss';
+
+.youtube {
+  display: flex;
+
+}
+
+.youtube-img {
+  background: url('../images/untitleds.jpg') center no-repeat;
+  background-size: cover;
+  width: 1920px;
+  height: 500px;
+  box-shadow: 0px 0px 10px 1px rgba(black, 0.4);
+}
+
+.youtube-desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em;
+
+  .btn {
+    margin-top:2em;
+  }
+}
+
+.btn {
+  border: 2px solid $red;
+  padding: 1em 2em;
+  color: $red;
+  text-decoration: none;
+  box-shadow: 0px 2px 5px rgba(black, 0.4);
+
+  &:hover {
+    background-color: $red;
+    color: $white;
+    box-shadow: 0px 0px 0px rgba(black, 0.4);
+  }
+}
+
+.youtube-videos {
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-between;
+
+  iframe {
+    box-shadow: 0px 0px 10px 1px rgba(black, 0.4);    
+  }
+}

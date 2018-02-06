@@ -1,0 +1,52 @@
+@import '../colours.scss';
+
+.socials {
+  ul {
+    display: flex;
+
+    li {
+      margin: 0 .5em;
+      font-size: 1.2rem;
+
+      a {
+        color: $red;
+      }
+
+      &:hover {
+        svg {
+          transform: scale(1.5, 1.5);
+        }
+      }
+    }
+  }
+}
+
+.snapchat-modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  background-color: rgba(black, 0.7);
+
+  img {
+    width: 250px;
+    border-radius: 10px;
+  }
+}
+
+#closeSnapModal {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  color: $white;
+  z-index: 99;
+}
+
+.visible {
+  display: flex !important;
+}

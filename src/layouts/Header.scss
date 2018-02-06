@@ -1,0 +1,15 @@
+@import '../colours.scss';
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5em 1em;
+  background-color: $white;
+  color: $red;
+  box-shadow: 0px 0px 3px rgba(black, .3);
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}

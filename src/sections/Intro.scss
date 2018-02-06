@@ -1,0 +1,79 @@
+@import '../colours.scss';
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background: url('../images/mountains-min.jpg') center no-repeat;
+  background-size: 105%;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+
+  h1 {
+    color: $white;
+    font-size: 6rem;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-shadow: 0px 0px 30px rgba(black, 1);
+  }
+
+  p {
+    color: $white;
+    width: 800px;
+    line-height: 1.8em;
+  }
+}
+
+.scroll-lines {
+  height: 75px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 1em;
+}
+
+.scroll-line {
+  display: block;
+  height: 1px;
+  width: 100%;
+  margin: .5em 0;
+  background-color: $white;
+
+  &:first-child {
+    animation: flashLines 3s ease infinite alternate;
+  }
+
+  &:nth-child(2) {
+    width: 55%;
+    animation: flashLines 3s ease 1s infinite alternate;
+  }
+
+  &:last-child {
+    width: 20%;
+    animation: flashLines 3s ease 2s infinite alternate;
+  }
+}
+
+@keyframes flashLines {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.2;
+  }
+}
+
+.dot {
+  width: 50px;
+  height: 40px;
+  background: red;
+  z-index: 99;
+}
