@@ -12,7 +12,7 @@ export default class Youtube extends Component {
           <div className="youtube-img"></div>
           <div className="youtube-desc">
             <h2 className="loud-title text-center">Youtube</h2>
-            <p className="text-center" >In my spare time I read chilling stories found on Reddit, with author's permission of course. I really enjoy this past time and it seems that others do as well! If you want something</p>
+            <p className="text-center" >In my spare time I read chilling stories found on Reddit, with author's permission of course. I really enjoy this past time and it seems that others do as well! If you want something creepy and thrilling, definitely checkout my channel!</p>
             <a className="btn" href="https://www.youtube.com/c/storiesaftermidnight" target="_blank" rel="noopener noreferrer">View Stories After Midnight</a>
           </div>
         </div>
