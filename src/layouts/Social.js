@@ -23,7 +23,7 @@ export default class Social extends Component {
       <div className="socials">
         <ul>
           <li>
-            <a href="https://www.instagram.com/chambers43/">
+            <a href="https://www.instagram.com/the.t.chambers/">
               <i className="fab fa-instagram"></i>
             </a>
           </li>
