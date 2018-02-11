@@ -92,9 +92,20 @@
   }
 }
 
+
 @media screen and (min-width: 1590px) {
   .mobile-cheat-sheet-toggle {
     display: none;
+  }
+
+  .cheat-sheet-nav {
+    ul {
+      flex-direction: column;
+
+      li {
+        margin: .5em 0;
+      }
+    }
   }
 }
 
