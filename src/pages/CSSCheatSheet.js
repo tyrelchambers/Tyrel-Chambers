@@ -12,6 +12,7 @@ export default class CSSCheatSheet extends Component {
   }
   componentDidMount() {
     this.handleScroll();
+    this.toggleMiniNav();
     const visible = !this.state.visible;
     setTimeout(() => {
       this.setState({visible});
@@ -28,12 +29,23 @@ export default class CSSCheatSheet extends Component {
     });
   }
 
+  toggleMiniNav() {
+    $('.mobile-cheat-sheet-toggle').on('click', function() {
+      $('.cheat-sheet-nav ul').toggleClass('visible');
+    });
+  }
+
   render() {
     const { visible } = this.state;
     const pageVisible = visible ? "fade-enter-active" : "fade-enter"
     return(
       <div className={"css-cheat-sheet-wrapper container " + pageVisible}>
         <nav className="cheat-sheet-nav">
+          <div className="mobile-cheat-sheet-toggle">
+            <span className="line"></span>
+            <span className="line"></span>
+            <span className="line"></span>
+          </div>
           <ul>
             <li>
               <a href="#selectors" className="cheat-nav-link">Selectors</a>
@@ -415,7 +427,7 @@ export default class CSSCheatSheet extends Component {
           </div>
           <span className="external-link">
             <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">
-              More Flexbox <i class="fas fa-external-link-alt"></i>
+              More Flexbox <i className="fas fa-external-link-alt"></i>
             </a>
           </span>
         </div>
@@ -443,7 +455,7 @@ export default class CSSCheatSheet extends Component {
           </div>
           <span className="external-link">
             <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">
-              More CSS Grid <i class="fas fa-external-link-alt"></i>
+              More CSS Grid <i className="fas fa-external-link-alt"></i>
             </a>
           </span>
         </div>
