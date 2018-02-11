@@ -10,7 +10,7 @@
   a {
     color: $red;
     text-decoration: none;
-    font-weight: 300;
+    font-weight: 500;
   }
 }
 
@@ -60,6 +60,26 @@
 
 .hidden {
   display: none;
+}
+
+.cheat-sheet-nav {
+  position: fixed;
+  left: 1em;
+
+  ul {
+    li {
+      margin: 1em 0;
+      
+      a {
+        text-decoration: none;
+        color: $blue;
+      }
+
+      &:hover a {
+        border-bottom: 2px solid $red;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 425px) {
