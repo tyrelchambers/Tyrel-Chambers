@@ -4,8 +4,18 @@ import './CSSCheatSheet.scss';
 import $ from 'jquery';
 
 export default class CSSCheatSheet extends Component {
+  constructor() {
+    super();
+    this.state = {
+      visible: false
+    };
+  }
   componentDidMount() {
     this.handleScroll();
+    const visible = !this.state.visible;
+    setTimeout(() => {
+      this.setState({visible});
+    }, 100)
   }
 
   handleScroll() {
@@ -17,9 +27,12 @@ export default class CSSCheatSheet extends Component {
       }, 500);
     });
   }
+
   render() {
+    const { visible } = this.state;
+    const pageVisible = visible ? "fade-enter-active" : "fade-enter"
     return(
-      <div className="css-cheat-sheet-wrapper container">
+      <div className={"css-cheat-sheet-wrapper container " + pageVisible}>
         <nav className="cheat-sheet-nav">
           <ul>
             <li>
@@ -46,41 +59,50 @@ export default class CSSCheatSheet extends Component {
             <li>
               <a href="#size-properties" className="cheat-nav-link">Size Properties</a>
             </li>
+            <li>
+              <a href="#2d-transformations" className="cheat-nav-link">2D Transformation</a>
+            </li>
+            <li>
+              <a href="#flexbox" className="cheat-nav-link">Flexbox</a>
+            </li>
+            <li>
+              <a href="#css-grid" className="cheat-nav-link">CSS Grid</a>
+            </li>
           </ul>
         </nav>
         <h1 className="loud-title text-center">CSS Cheat Sheet</h1>
         <div className="selectors" id="selectors">
           <h2 className="styled-h2">Selectors</h2>
           <div className="cheat-sheet">
-            <div className="css-box">
+            <div className="css-box" id="class-selectors">
               <h3>Class Selector</h3>
               <p className="code-sample">.</p>
             </div>
-            <div className="css-box">
+            <div className="css-box" id="id-selector">
               <h3>Id Selector</h3>
               <p className="code-sample">#</p>
             </div>
-            <div className="css-box">
+            <div className="css-box" id="all-elements">
               <h3>All Elements</h3>
               <p className="code-sample">*</p>
             </div>
-            <div className="css-box">
+            <div className="css-box" id="single-selector">
               <h3>Single Selector</h3>
               <p className="code-sample">p</p>
             </div>
-            <div className="css-box">
+            <div className="css-box" id="multiple-elements">
               <h3>Multiple Elements</h3>
               <p className="code-sample">div, div</p>
             </div>
-            <div className="css-box">
+            <div className="css-box" id="direct-descendants">
               <h3>Direct Descendants</h3>
               <p className="code-sample">div > p</p>
             </div>
-            <div className="css-box">
+            <div className="css-box" id="sibling-selector">
               <h3>Sibling Selector</h3>
               <p className="code-sample">div ~ h1</p>
             </div>
-            <div className="css-box">
+            <div className="css-box" id="general-attributes">
               <h3>General Attributes</h3>
               <p className="code-sample">[attribute=value]</p>
             </div>
@@ -325,6 +347,106 @@ export default class CSSCheatSheet extends Component {
           </div>
         </div>
 
+        <div className="selectors" id="2d-transformations">
+          <h2 className="styled-h2">2D Transformations</h2>
+          <div className="cheat-sheet">
+            <div className="css-box column">
+              <h3>Translate</h3>
+              <p className="code-sample">transform: translate(x,y)</p>
+            </div>
+            <div className="css-box column">
+              <h3>TranslateX</h3>
+              <p className="code-sample">transform: translateX(10px)</p>
+            </div>
+            <div className="css-box column">
+              <h3>TranslateY</h3>
+              <p className="code-sample">transform: translateY(10px)</p>
+            </div>
+            <div className="css-box column">
+              <h3>Scale</h3>
+              <p className="code-sample">transform: scale(x,y) | scaleX(1.2) | scaleY(1.5)</p>
+            </div>
+            <div className="css-box column">
+              <h3>Rotate</h3>
+              <p className="code-sample">transform: rotate(20deg)</p>
+            </div>
+            <div className="css-box column">
+              <h3>Skew</h3>
+              <p className="code-sample">transform: skew(x-angle, y-angle) | skeyX(10deg) | skewY(10deg)</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="selectors" id="flexbox">
+          <h2 className="styled-h2">Flexbox</h2>
+          <div className="cheat-sheet">
+            <div className="css-box column">
+              <h3>Display</h3>
+              <p className="code-sample">display: flex</p>
+            </div>
+            <div className="css-box column">
+              <h3>Flex Direction</h3>
+              <p className="code-sample">flex-direction: row (default) | column</p>
+            </div>
+            <div className="css-box column">
+              <h3>Justify Content</h3>
+              <p className="code-sample">justify-content: flex-start | flex-end | center | space-between | space-around</p>
+            </div>
+            <div className="css-box column">
+              <h3>Align Items</h3>
+              <p className="code-sample">align-items: stretch | Center | flex-start | flex-end | space-between | space-around</p>
+            </div>
+            <div className="css-box column">
+              <h3>Flex Wrap</h3>
+              <p className="code-sample">flex-wrap: nowrap | wrap | wrap-reverse | initial | inherit</p>
+            </div>
+            <div className="css-box column">
+              <h3>Flex Flow</h3>
+              <p className="code-sample">flex-flow: flex-direction flex-wrap | initial | inherit</p>
+            </div>
+            <div className="css-box column">
+              <h3>Order</h3>
+              <p className="code-sample">flex: number | initial | inherit</p>
+            </div>
+            <div className="css-box column">
+              <h3>Align Self</h3>
+              <p className="code-sample">align-self: auto | stretch | center | flex-start | flex-end | baseline</p>
+            </div>
+          </div>
+          <span className="external-link">
+            <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">
+              More Flexbox <i class="fas fa-external-link-alt"></i>
+            </a>
+          </span>
+        </div>
+
+        <div className="selectors" id="css-grid">
+          <h2 className="styled-h2">CSS Grid</h2>
+          
+          <div className="cheat-sheet">
+            <div className="css-box column">
+              <h3>Display</h3>
+              <p className="code-sample">display: grid | inline-grid | subgrid</p>
+            </div>
+            <div className="css-box column">
+              <h3>Grid Template Columns</h3>
+              <p className="code-sample">grid-template-columns: 100px / 1fr / auto | repeat(auto-fill / auto-fit, 1fr)</p>
+            </div>
+            <div className="css-box column">
+              <h3>Grid Template Rows</h3>
+              <p className="code-sample">grid-template-rows: 100px / 1fr / auto</p>
+            </div>
+            <div className="css-box column">
+              <h3>Grid Column Gap</h3>
+              <p className="code-sample">grid-column-gap: 15px</p>
+            </div>
+          </div>
+          <span className="external-link">
+            <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">
+              More CSS Grid <i class="fas fa-external-link-alt"></i>
+            </a>
+          </span>
+        </div>
       </div>
     );
   }
