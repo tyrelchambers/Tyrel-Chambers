@@ -5,6 +5,7 @@ import './Businesses.scss';
 import keySparkImg from '../images/logo-wordmark-blue-500-svg.svg';
 import ediscoImg from '../images/brain-title.png';
 import armourCssImg from '../images/armourcss-banner.svg';
+import alpenWestImg from '../images/alpen-west.svg';
 
 export default class Businesses extends Component {
   render() {
@@ -34,7 +35,7 @@ export default class Businesses extends Component {
 
           <li className="alpen-west business">
             <a href="#" target="_blank" rel="noopener noreferrer" >
-              <h1>Alpen West</h1>
+            <img src={alpenWestImg} alt="Alpen West Logo"/>
             </a>
           </li>
 
