@@ -90,6 +90,10 @@
       box-shadow: 0px 0px 4px 1px rgba(black, 0.3);
     }
   }
+
+  .cheat-nav-link {
+    color: $white !important;
+  }
 }
 
 
@@ -104,9 +108,11 @@
 
       li {
         margin: .5em 0;
+        
       }
     }
   }
+
 }
 
 @media screen and (max-width: 768px) {
