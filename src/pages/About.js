@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-
 import './About.scss';
 import selfie from '../images/selfie.jpg';
 
@@ -11,6 +10,7 @@ export default class About extends Component {
     };
   }
   componentDidMount() {
+    
     const visible = !this.state.visible;
     setTimeout(() => {
       this.setState({visible});

@@ -12,6 +12,10 @@
   position: fixed;
   top: 0;
   z-index: 99;
+
+  img {
+    width: 50px;
+  }
 }
 
 @media screen and (max-width: 425px) {
