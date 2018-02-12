@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 
-import './About.scss'
-import tcLogo from '../images/tc-logo.svg';
+import './About.scss';
 
 export default class About extends Component {
   render() {
     return (
       <div className="about-section">
-        <img src={tcLogo} alt="TC Logo"/>
         <h1>Good Day!</h1>
         <h2 className="text-center">Hello, is it me you're looking for?</h2>
         <p>I'm a <NavLink exact to="/about">Full-Stack Rails Dev</NavLink> with an assortment of interests! I won't bore you with a list of things I like. But, here are a few: I enjoy hockey (go Flyers!), I enjoy playing video games, and I absolutely enjoying programming! Other than playing games or guitar, you can find me reading educational or thrilling books, uploading videos to my YouTube channel, <a href="https://www.youtube.com/c/storiesaftermidnight">Stories After Midnight</a>, or just generally hanging around.</p>
