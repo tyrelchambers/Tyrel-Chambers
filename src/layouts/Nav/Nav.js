@@ -38,6 +38,9 @@ export default class Nav extends Component {
           <li>
             <NavLink exact to="/css-cheat-sheet">CSS Cheat Sheet</NavLink>
           </li>
+          <li>
+            <NavLink exact to="/playground">Playground</NavLink>
+          </li>
         </ul>
 
         <ul className="mobile-navbar">
@@ -52,6 +55,9 @@ export default class Nav extends Component {
           </li>
           <li>
             <NavLink exact to="/css-cheat-sheet" onClick={this.handleLinkClick}>CSS Cheat Sheet</NavLink>
+          </li>
+          <li>
+            <NavLink exact to="/playground">Playground</NavLink>
           </li>
         </ul>
 

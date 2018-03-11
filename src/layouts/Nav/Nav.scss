@@ -2,15 +2,21 @@
 
 .navbar {
   display: flex;
-
-  li {
-    margin: 0 1em;
-  }
+  height: 100%;
 
   a {
     color: $red;
     text-decoration: none;
     font-weight: 500;
+    padding: 1em;
+    margin: 0 5px;
+    border-radius: 5px;
+    &:hover {
+      background-color: $red;
+      color: $white;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px rgba(black, 0.4);
+    }
   }
 }
 
@@ -55,7 +61,11 @@
   background-color: $white !important;
 }
 .active {
-  border-bottom: 2px solid $red;
+  background-color: $red;
+  color: $white !important;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(black, 0.4);
+  
 }
 
 .hidden {
