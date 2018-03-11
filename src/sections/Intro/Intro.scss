@@ -1,4 +1,4 @@
-@import '../colours.scss';
+@import '../../colours.scss';
 
 .intro {
   display: flex;
@@ -7,7 +7,7 @@
   flex-direction: column;
   width: 100%;
   height: 100vh;
-  background: url('../images/mountains-min.jpg') center no-repeat;
+  background: url('../../images/mountains-min.jpg') center no-repeat;
   background-size: 105%;
   overflow: hidden;
   text-align: center;

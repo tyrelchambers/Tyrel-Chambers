@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './App.scss';
 
-import Intro from '../sections/Intro.js';
-import About from '../sections/About.js';
-import Businesses from '../sections/Businesses.js';
-import Youtube from '../sections/Youtube.js';
-import InstagramFeed from '../sections/InstagramFeed.js';
+import Intro from '../../sections/Intro/Intro';
+import About from '../../sections/About/About';
+import Businesses from '../../sections/Businesses/Businesses';
+import Youtube from '../../sections/Youtube/Youtube';
+import InstagramFeed from '../../sections/InstagramFeed/InstagramFeed';
 
 class App extends Component {
   constructor() {

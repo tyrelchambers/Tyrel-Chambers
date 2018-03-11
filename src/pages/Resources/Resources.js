@@ -345,61 +345,61 @@ export default class Resources extends Component {
       {
         title: 'Crushing It!',
         author: 'Gary Vaynerchuck',
-        img: require('../images/crushingit.jpg'),
+        img: require('../../images/crushingit.jpg'),
         url: 'https://www.amazon.ca/Crushing-Great-Entrepreneurs-Business-Influence-ebook/dp/B072DV2GHG/ref=sr_1_1?s=digital-text&ie=UTF8&qid=1517777443&sr=1-1&keywords=crushing+it'
       },
       {
         title: 'ReWork',
         author: 'Jason Fried, David Heinemeler Hansson',
-        img: require('../images/rework.jpeg'),
+        img: require('../../images/rework.jpeg'),
         url: 'https://www.amazon.ca/Rework-Jason-Fried/dp/0307463745/ref=sr_1_1?s=books&ie=UTF8&qid=1517779185&sr=1-1&keywords=rework'
       },
       {
         title: 'Practical Modern Javascript',
         author: 'Nicolas Bevacqua',
-        img: require('../images/practicaljs.jpg'),
+        img: require('../../images/practicaljs.jpg'),
         url: 'https://www.amazon.ca/Practical-Modern-JavaScript-Dive-Future/dp/149194353X/ref=sr_1_1?ie=UTF8&qid=1517778485&sr=8-1&keywords=practical+modern+javascript'
       },
       {
         title: 'The Rails 5 Way',
         author: 'Obie Fernandez',
-        img: require('../images/rails5.jpg'),
+        img: require('../../images/rails5.jpg'),
         url: 'https://www.amazon.ca/Rails-5-Way-4th/dp/0134657675/ref=sr_1_1?s=books&ie=UTF8&qid=1517778549&sr=1-1&keywords=rails+5+way'
       },
       {
         title: 'You Don\'t Know JS: Up & Going',
         author: 'Kyle Simpson',
-        img: require('../images/ydkjs.jpg'),
+        img: require('../../images/ydkjs.jpg'),
         url: 'https://www.amazon.ca/You-Dont-Know-JS-Going/dp/1491924462/ref=sr_1_2?s=books&ie=UTF8&qid=1517778620&sr=1-2&keywords=you+dont+know+js'
       },
       {
         title: 'You Don\'t Know JS: Scopes & Closures',
         author: 'Kyle Simpson',
-        img: require('../images/ydkjs2.jpg'),
+        img: require('../../images/ydkjs2.jpg'),
         url: 'https://www.amazon.ca/You-Dont-Know-JS-Closures/dp/1449335586/ref=sr_1_4?s=books&ie=UTF8&qid=1517778620&sr=1-4&keywords=you+dont+know+js'
       },
       {
         title: 'You Don\'t Know JS: Async & Performance',
         author: 'Kyle Simpson',
-        img: require('../images/ydkjs3.jpg'),
+        img: require('../../images/ydkjs3.jpg'),
         url: 'https://www.amazon.ca/You-Dont-Know-JS-Performance/dp/1491904224/ref=sr_1_6?s=books&ie=UTF8&qid=1517778620&sr=1-6&keywords=you+dont+know+js'
       },
       {
         title: 'You Don\'t Know JS: ES6 & Beyond',
         author: 'Kyle Simpson',
-        img: require('../images/ydkjs4.jpg'),
+        img: require('../../images/ydkjs4.jpg'),
         url: 'https://www.amazon.ca/You-Dont-Know-JS-Beyond/dp/1491904240/ref=sr_1_5?s=books&ie=UTF8&qid=1517778620&sr=1-5&keywords=you+dont+know+js'
       },
       {
         title: 'You Don\'t Know JS: this & Object Prototype',
         author: 'Kyle Simpson',
-        img: require('../images/ydkjs5.jpg'),
+        img: require('../../images/ydkjs5.jpg'),
         url: 'https://www.amazon.ca/You-Dont-Know-JS-Prototypes/dp/1491904151/ref=sr_1_3?s=books&ie=UTF8&qid=1517778620&sr=1-3&keywords=you+dont+know+js'
       },
       {
         title: 'You Don\'t Know JS: Types & Grammar',
         author: 'Kyle Simpson',
-        img: require('../images/ydkjs6.jpg'),
+        img: require('../../images/ydkjs6.jpg'),
         url: 'https://www.amazon.ca/You-Dont-Know-JS-Grammar/dp/1491904194/ref=sr_1_1?s=books&ie=UTF8&qid=1517778620&sr=1-1&keywords=you+dont+know+js'
       }     
     ]

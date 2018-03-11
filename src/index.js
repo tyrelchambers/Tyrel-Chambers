@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './index.scss';
-import App from './pages/App';
-import About from './pages/About';
-import Header from './layouts/Header';
-import Footer from './layouts/Footer.js';
-import Resources from './pages/Resources';
-import CSSCheatSheet from './pages/CSSCheatSheet';
+import App from './pages/App/App';
+import About from './pages/About/About';
+import Header from './layouts/Header/Header';
+import Footer from './layouts/Footer/Footer';
+import Resources from './pages/Resources/Resources';
+import CSSCheatSheet from './pages/CssCheatSheet/CSSCheatSheet';
 
 import registerServiceWorker from './registerServiceWorker';
 

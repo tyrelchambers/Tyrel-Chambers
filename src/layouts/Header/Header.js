@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './Header.scss';
 
-import Navbar from './Nav';
-import Social from './Social';
+import Navbar from '../Nav/Nav';
+import Social from '../Social/Social';
 
 class Header extends Component {
   render() {

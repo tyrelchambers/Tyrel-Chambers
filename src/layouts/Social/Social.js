@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import './Social.scss';
-import snapImg from '../images/IMG_0616.JPG';
+import snapImg from '../../images/IMG_0616.JPG';
 
 export default class Social extends Component {
   constructor() {
@@ -30,7 +30,7 @@ export default class Social extends Component {
           <li>
             <a href="https://twitter.com/Chambers43">
               <i className="fab fa-twitter"></i>
-            </a>
+            </a> 
           </li>
           <li>
             <a href="https://medium.com/@tyrel.chambers">

@@ -1,4 +1,4 @@
-@import '../colours.scss';
+@import '../../colours.scss';
 
 .youtube {
   display: flex;
@@ -6,7 +6,7 @@
 }
 
 .youtube-img {
-  background: url('../images/untitleds.jpg') center no-repeat;
+  background: url('../../images/untitleds.jpg') center no-repeat;
   background-size: cover;
   width: 1920px;
   height: 500px;

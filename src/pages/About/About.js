@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './About.scss';
-import selfie from '../images/selfie.jpg';
+import selfie from '../../images/selfie.jpg';
 
 export default class About extends Component {
   constructor() {
