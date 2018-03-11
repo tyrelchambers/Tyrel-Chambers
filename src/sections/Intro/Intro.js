@@ -49,7 +49,7 @@ export default class Intro extends Component {
   render() {
     return (
       <div className="intro" id="intro">
-        <h1 id="greeting">Good {this.setTimeOfDay(this.state.timeOfDay)}</h1>
+        <h1 id="greeting">Good {this.setTimeOfDay(this.state.timeOfDay)}!</h1>
         <div className="scroll-lines">
           <span className="scroll-line"></span>
           <span className="scroll-line"></span>
