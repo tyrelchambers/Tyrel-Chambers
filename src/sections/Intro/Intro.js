@@ -35,13 +35,14 @@ export default class Intro extends Component {
   }
 
   parallax() {
-    var currentMousePos = { x: 0, y: 0};
+    var currentMousePos = { x: 0, y: 50};
 
     $('.intro').mousemove((e) => {
       currentMousePos.x = e.pageX;
       currentMousePos.y = e.pageY;
     
       $('.intro').css('background-position', currentMousePos.x / 100 + "% " + currentMousePos.y / 1000 + "%");
+      
     });
     
   }
