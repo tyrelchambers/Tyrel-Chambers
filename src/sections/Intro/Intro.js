@@ -1,11 +1,37 @@
 import React, { Component } from 'react';
 import './Intro.scss';
 import $ from 'jquery';
+import '../../colours.scss';
 
 export default class Intro extends Component {
+  constructor() {
+    super()
+    this.state = {
+      timeOfDay: new Date().getHours()
+    }
+  }
 
   componentDidMount() {
     this.parallax();
+  }
+
+  setTimeOfDay = (state) => {
+    let hour;
+
+    if(state >= 0 && state < 12) {
+      hour = "Morning";
+
+    } else if(state >= 12 && state < 17) {
+      hour = "Afternoon";
+
+    } else if(state >= 17 && state < 20) {
+      hour = "Evening";
+
+    } else if(state >= 20 && state < 24) {
+      hour = "Night";
+    }
+
+    return hour;
   }
 
   parallax() {
@@ -23,8 +49,7 @@ export default class Intro extends Component {
   render() {
     return (
       <div className="intro" id="intro">
-        <h1>Tyrel Chambers</h1>
-        <p>A Full-Stack Rails Dev trying to make his way in the world. Through this site, my <a href="https://medium.com/@tyrel.chambers">Medium</a> posts and other works, I intend and am passionate about helping devs become better programmers and people. I may not know it all, but I have a passion and a desire to see you succeed.</p>
+        <h1 id="greeting">Good {this.setTimeOfDay(this.state.timeOfDay)}</h1>
         <div className="scroll-lines">
           <span className="scroll-line"></span>
           <span className="scroll-line"></span>

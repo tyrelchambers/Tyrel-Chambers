@@ -30,7 +30,7 @@ export default class Nav extends Component {
             <NavLink exact to="/">Home</NavLink>
           </li>
           <li>
-            <NavLink exact to="/about">About</NavLink>
+          <NavLink exact to="/about">About</NavLink>
           </li>
           <li>
             <NavLink exact to="/resources">Resources</NavLink>
