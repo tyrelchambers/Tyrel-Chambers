@@ -41,7 +41,7 @@ export default class Intro extends Component {
       currentMousePos.x = e.pageX;
       currentMousePos.y = e.pageY;
     
-      $('.intro').css('background-position', currentMousePos.x / 30 + "% " + currentMousePos.y / 60 + "%");
+      $('.intro').css('background-position', currentMousePos.x / 100 + "% " + currentMousePos.y / 1000 + "%");
     });
     
   }
